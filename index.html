@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>PIC</title>
+</head>
+
+<body>
+    <!-- Hero section -->
+    <div class="container-fluid" id="hero">
+        <!-- <img src="./asserts/hero_bg.png" id="hero_bg"> -->
+        <div id="nav">
+            <a href="#" class="small_nav " style="grid-area: 1;left:19%">HOME</a>
+            <a href="#" class="small_nav " style="grid-area: 1;right: 19%;">WORKS</a>
+            <a href="#" class="pic" style="grid-area: 1;">PIC</a>
+            <a href="#" class="small_nav " style="grid-area: 1;left:19%">ABOUT</a>
+            <a href="#" class="small_nav " style="grid-area: 1;right: 19%;">CONTACT</a>
+        </div>
+        <div id="heading" class="container-xxl">Bridging the Gap Between Ideas
+            and Technology</div>
+        <div id="description">We meticulously curate a diverse range of visionary projects that
+            propels
+            us towards a future where innovation knows no bounds</div>
+        <button id="btn_touch" href="#">GET IN TOUCH</button>
+        <div id="explore">EXPLORE MORE <svg id="explore_arrow_svg" xmlns="http://www.w3.org/2000/svg" width="11" height="28"
+                viewBox="0 0 11 28" fill="none">
+                <path d="M5.00002 28L-2.40743e-05 19.75L10.0313 19.75L5.00002 28Z" fill="white" />
+                <rect x="4" width="2" height="21" fill="white" />
+            </svg></div>
+    </div>
+    <!-- / Hero section -->
+</body>
+<script>
+    let bg_height = screen.height;
+    let bg_width = screen.width;
+    let hero = document.getElementById("hero");
+    // to make the background and the section size as responsive
+    hero.style.height = bg_height + "px";
+    hero.style.width = bg_width - 17 + "px";
+    console.log(bg_height, bg_width);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</html>

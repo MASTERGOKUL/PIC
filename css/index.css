@@ -1,0 +1,106 @@
+/* figma link : https://www.figma.com/file/VkW9XNyzutas6XWS9IuMpY/Untitled?node-id=75%3A200&mode=dev */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+a{
+    text-decoration: none !important ;
+}
+/* Hero Section */
+/* nav */
+#nav {
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.pic {
+    color: #61AEBC;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2.88px;
+}
+
+.small_nav {
+    font-style: normal;
+    position: relative;
+    margin-top: 5%;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+}
+
+/* /nav */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    color: #FFF;
+    font-family: Roboto;
+    flex-shrink: 0;
+    background: url("../asserts/hero_bg_cropped.png") no-repeat;
+}
+
+#heading {
+    line-height: normal;
+    position: relative;
+    left: 2.7%;
+    margin-top: 7%;
+    text-align: center;
+    font-size: 77px;
+    font-weight: 600;
+    letter-spacing: 2.31px;
+}
+
+#description {
+    position: relative;
+    bottom: 9.5%;
+    width: 50%;
+    font-style: normal;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 143.687%;
+    /* 37.359px */
+    letter-spacing: 0.78px;
+}
+
+#btn_touch {
+    position: relative;
+    bottom: 14%;
+    color: #FFF;
+    width: 350px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 52px;
+    background: #61AEBC;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+#explore {
+    position: relative;
+    bottom: 14%;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+#explore_arrow_svg{
+    animation: explore_arrow 1s infinite  alternate;
+}
+@keyframes explore_arrow {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+}
+
+/* /Hero Section */
