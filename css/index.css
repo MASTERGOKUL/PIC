@@ -4,13 +4,18 @@
     padding: 0;
     box-sizing: border-box;
     border: none;
+    font-family: Roboto;
 }
-a{
-    text-decoration: none !important ;
+
+a {
+    text-decoration: none !important;
 }
+
 /* Hero Section */
 /* nav */
 #nav {
+    position: sticky;
+    top: 0;
     margin-top: 2%;
     width: 100%;
     text-align: center;
@@ -53,7 +58,7 @@ a{
     line-height: normal;
     position: relative;
     left: 2.7%;
-    margin-top: 7%;
+    margin-top: 8.9%;
     text-align: center;
     font-size: 77px;
     font-weight: 600;
@@ -62,7 +67,7 @@ a{
 
 #description {
     position: relative;
-    bottom: 9.5%;
+    bottom: 8%;
     width: 50%;
     font-style: normal;
     text-align: center;
@@ -76,13 +81,15 @@ a{
 
 #btn_touch {
     position: relative;
-    bottom: 14%;
+    bottom: 8%;
+}
+.button {
     color: #FFF;
     width: 350px;
     height: 64px;
     flex-shrink: 0;
     border-radius: 52px;
-    background: #61AEBC;
+    background-color: #61AEBC;
     font-size: 24px;
     font-weight: 500;
     letter-spacing: 3px;
@@ -90,17 +97,60 @@ a{
 
 #explore {
     position: relative;
-    bottom: 14%;
+    bottom: 5%;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.8px;
 }
-#explore_arrow_svg{
-    animation: explore_arrow 1s infinite  alternate;
+
+#explore_arrow_svg {
+    animation: explore_arrow 1s infinite alternate;
 }
+
 @keyframes explore_arrow {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(10px); }
+    0% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
 }
 
 /* /Hero Section */
+
+/* Services */
+#services {
+    background-color: #15e24530;
+}
+
+#our_services {
+    position: relative;
+    /* left: 10%;
+    top: 7%; */
+    height: 5%;
+    max-width:50%;
+    font-family: Roboto;
+    color: #1F3447;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
+
+#heading_services {
+    color: #ffF;
+    background-color: 1F34471F;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    z-index: -1;
+    top: 109%;
+    position: relative;
+    right: 10.2%;
+    font-size: 177px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* / Services */

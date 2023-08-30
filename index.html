@@ -27,7 +27,7 @@
         <div id="description">We meticulously curate a diverse range of visionary projects that
             propels
             us towards a future where innovation knows no bounds</div>
-        <button id="btn_touch" href="#">GET IN TOUCH</button>
+        <button class="button" id="btn_touch" href="#">GET IN TOUCH</button>
         <div id="explore">EXPLORE MORE <svg id="explore_arrow_svg" xmlns="http://www.w3.org/2000/svg" width="11" height="28"
                 viewBox="0 0 11 28" fill="none">
                 <path d="M5.00002 28L-2.40743e-05 19.75L10.0313 19.75L5.00002 28Z" fill="white" />
@@ -35,14 +35,33 @@
             </svg></div>
     </div>
     <!-- / Hero section -->
+
+    <!-- Services -->
+    <div class="container-fluid" id="services">
+        <div id="our_services">OUR SERVICES
+            <span id="heading_services">SERVICES</span>
+        </div>
+        <div id="help">
+
+        </div>
+        <button class="button" href="#">DISCOVER MORE</button>
+    </div>
+    <!-- / Services -->
 </body>
 <script>
     let bg_height = screen.height;
     let bg_width = screen.width;
-    let hero = document.getElementById("hero");
+   
     // to make the background and the section size as responsive
-    hero.style.height = bg_height + "px";
-    hero.style.width = bg_width - 17 + "px";
+    
+    function h_w(id){
+        let element = document.getElementById(id);
+        element.style.height = bg_height -90+ "px";
+        element.style.width = bg_width - 17 + "px";
+    }
+    h_w("hero")
+    h_w("services")
+
     console.log(bg_height, bg_width);
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
