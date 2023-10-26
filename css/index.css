@@ -238,47 +238,48 @@ a {
 
 /* -- Hero Section --*/
 
+/* ---- text strokes ------ */
+.stroke_main {
+    font-family: Roboto;
+    font-size: clamp(50px,15vw,177px);
+    color: transparent;
+    -webkit-text-stroke: 1.5px #1F344733;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+  }
+  .stroke_side{
+      position: relative;
+      font-size: clamp(16px,5vw,36px);
+      color: #1F3447;
+      font-weight: 700;
+  }
+  .left_middle{
+      bottom:12.5vh;
+  }
+/* ---- text strokes ------ */
 /* Services */
-#services {
-  background-color: #15e24530;
-}
+#services_text{
 
-#our_services {
-  position: relative;
-  /* left: 10%;
-    top: 7%; */
-  height: 5%;
-  max-width: 50%;
-  font-family: Roboto;
-  color: #1f3447;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.36px;
 }
-
-#heading_services {
-  color: #fff;
-  background-color: 1F34471F;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-  z-index: -1;
-  top: 109%;
-  position: relative;
-  right: 10.2%;
-  font-size: 177px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+#help{
+    max-width: 378px;
+    color: #1F3447;
+    font-size: clamp(28px,5vw,48px);
+    letter-spacing: 0.96px;
+    font-weight: 700;
 }
-
+#services #discover{
+    border-radius: 52px;
+    background: #61AEBC;
+    box-shadow: 0px 4px 4px 0px rgba(97, 174, 188, 0.25);
+}
 /* / Services */
 
-/* Responsiveness for mobile */
+/* ------------------------- Responsiveness for mobile --------------------------------------- */
 
 @media screen and (max-width: 768px) {
-    /* Nav bar Section */
+  /* Nav bar Section */
   #nav .small_nav {
     visibility: hidden;
   }
@@ -301,18 +302,21 @@ a {
   #ham_btn {
     display: block;
   }
- /* ----- Nav bar Section ----- */
+  /* ----- Nav bar Section ----- */
 
-/* Hero Section  */
-#hero{
+  /* Hero Section  */
+  #hero {
     height: 93vh;
-}
-#heading{
+  }
+  #heading {
     margin-top: 20.9%;
-}
-#description{
+  }
+  #description {
     padding-top: 8%;
-}
-/* ------ Hero Section ------  */
-
+  }
+  /* ------ Hero Section ------  */
+  /* ------- text stroke -------- */
+  .left_middle{
+    bottom:5vh;
+  }
 }
