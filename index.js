@@ -1,3 +1,5 @@
+
+// for the responsive navbar
 const buttons = document.querySelectorAll("button");
 const mobileContainer = document.getElementById("small_nav_mobile_container");
 
@@ -22,3 +24,6 @@ buttons.forEach((button) => {
     }
   });
 });
+
+
+// -----------------------------
