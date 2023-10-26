@@ -1,71 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <title>PIC</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- navbar -->
+    <div id="nav">
+      <!-- for desktop -->
+      <a href="#" class="small_nav" style="grid-area: 1; left: 19%">HOME</a>
+      <a href="#" class="small_nav" style="grid-area: 1; right: 19%">WORKS</a>
+      <a href="#" class="pic" style="grid-area: 1">PIC</a>
+      <a href="#" class="small_nav" style="grid-area: 1; left: 19%">ABOUT</a>
+      <a href="#" class="small_nav" style="grid-area: 1; right: 19%">CONTACT</a>
+      <!-- Button hambugger -->
+      <button id="ham_btn"
+        class="button-one"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <svg
+          fill="var(--button-color)"
+          class="hamburger"
+          viewBox="0 0 100 100"
+          width="40"
+        >
+          <rect
+            class="line top"
+            width="80"
+            height="10"
+            x="10"
+            y="25"
+            rx="5"
+          ></rect>
+          <rect
+            class="line middle"
+            width="80"
+            height="10"
+            x="10"
+            y="45"
+            rx="5"
+          ></rect>
+          <rect
+            class="line bottom"
+            width="80"
+            height="10"
+            x="10"
+            y="65"
+            rx="5"
+          ></rect>
+        </svg>
+      </button>
+      <!-- for mobile -->
+      <ul id="small_nav_mobile_container">
+        <li><a href="#" class="small_nav_mobile">HOME</a></li>
+        <li><a href="#" class="small_nav_mobile">WORKS</a></li>
+        <li><a href="#" class="small_nav_mobile">ABOUT</a></li>
+        <li><a href="#" class="small_nav_mobile">CONTACT</a></li>
+      </ul>
+    </div>
+    <!-- / navbar -->
     <!-- Hero section -->
+
     <div class="container-fluid" id="hero">
-        <!-- <img src="./asserts/hero_bg.png" id="hero_bg"> -->
-        <div id="nav">
-            <a href="#" class="small_nav " style="grid-area: 1;left:19%">HOME</a>
-            <a href="#" class="small_nav " style="grid-area: 1;right: 19%;">WORKS</a>
-            <a href="#" class="pic" style="grid-area: 1;">PIC</a>
-            <a href="#" class="small_nav " style="grid-area: 1;left:19%">ABOUT</a>
-            <a href="#" class="small_nav " style="grid-area: 1;right: 19%;">CONTACT</a>
+      <!-- <img src="./asserts/hero_bg.png" id="hero_bg"> -->
+      <span id="container_hero">
+        <div id="heading" class="container-xxl">
+          Bridging the Gap Between Ideas and Technology
         </div>
-        <div id="heading" class="container-xxl">Bridging the Gap Between Ideas
-            and Technology</div>
-        <div id="description">We meticulously curate a diverse range of visionary projects that
-            propels
-            us towards a future where innovation knows no bounds</div>
+        <div id="description">
+          We meticulously curate a diverse range of visionary projects that
+          propels us towards a future where innovation knows no bounds
+        </div>
         <button class="button" id="btn_touch" href="#">GET IN TOUCH</button>
-        <div id="explore">EXPLORE MORE <svg id="explore_arrow_svg" xmlns="http://www.w3.org/2000/svg" width="11" height="28"
-                viewBox="0 0 11 28" fill="none">
-                <path d="M5.00002 28L-2.40743e-05 19.75L10.0313 19.75L5.00002 28Z" fill="white" />
-                <rect x="4" width="2" height="21" fill="white" />
-            </svg></div>
+        <div id="explore">
+          EXPLORE MORE
+          <svg
+            id="explore_arrow_svg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="11"
+            height="28"
+            viewBox="0 0 11 28"
+            fill="none"
+          >
+            <path
+              d="M5.00002 28L-2.40743e-05 19.75L10.0313 19.75L5.00002 28Z"
+              fill="white"
+            />
+            <rect x="4" width="2" height="21" fill="white" />
+          </svg>
+        </div>
+      </span>
     </div>
     <!-- / Hero section -->
 
     <!-- Services -->
-    <div class="container-fluid" id="services">
-        <div id="our_services">OUR SERVICES
-            <span id="heading_services">SERVICES</span>
-        </div>
-        <div id="help">
-
-        </div>
-        <button class="button" href="#">DISCOVER MORE</button>
-    </div>
+    <!-- <div class="container-fluid" id="services">
+      <div id="our_services">
+        OUR SERVICES
+        <span id="heading_services">SERVICES</span>
+      </div>
+      <div id="help"></div>
+      <button class="button" href="#">DISCOVER MORE</button>
+    </div> -->
     <!-- / Services -->
-</body>
-<script>
-    let bg_height = screen.height;
-    let bg_width = screen.width;
-   
-    // to make the background and the section size as responsive
-    
-    function h_w(id){
-        let element = document.getElementById(id);
-        element.style.height = bg_height -90+ "px";
-        element.style.width = bg_width - 17 + "px";
-    }
-    h_w("hero")
-    h_w("services")
+  </body>
+  <script>
+    // let bg_height = screen.height;
+    // let bg_width = screen.width;
 
-    console.log(bg_height, bg_width);
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    // // to make the background and the section size as responsive
+
+    // function h_w(id){
+    //     let element = document.getElementById(id);
+    //     element.style.height = bg_height -90+ "px";
+    //     element.style.width = bg_width - 17 + "px";
+    // }
+    // h_w("hero")
+    // h_w("services")
+
+    // console.log(bg_height, bg_width);
+  </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-
+    crossorigin="anonymous"
+  ></script>
+  <script src="./index.js"></script>
 </html>
