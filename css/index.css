@@ -260,22 +260,25 @@ a {
   color: #1f3447;
   font-weight: 700;
 }
-.services_heading_container{
+.services_heading_container {
   display: grid;
 }
-.baseline{
-  place-items:baseline;
+.baseline {
+  place-items: baseline;
 }
-.end{
+.center {
+  place-items: center;
+}
+.end {
   place-items: end;
 }
-.services_heading_container > *{
+.services_heading_container > * {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
 }
-.left_middle{
+.left_middle {
   bottom: 0.9rem;
-    position: relative;
+  position: relative;
 }
 /* ---- text strokes ------ */
 /* Services */
@@ -325,40 +328,97 @@ a {
 }
 /* / Services */
 /* Vision and mission */
-#vission_mission{
+#vission_mission {
   margin-top: 2rem;
   padding: 5rem;
-  background-image: url('../asserts/vision_mission.png');
+  background-image: url("../asserts/vision_mission.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
-#vission_context{
+#vission_context {
   text-shadow: 1px 1px 1px black;
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-weight: 400;
   text-align: end;
   margin-top: 5rem;
- max-width: 90%;
+  max-width: 90%;
 }
-.right_middle{
+.right_middle {
   position: relative;
   top: 1rem;
 }
-.vision_container{
+.vision_container {
   display: flex;
   flex-direction: column;
   align-items: end;
   /* margin-inline: 50% auto; */
 }
-#discover{
+.vision_discover {
+  display: flex;
+  justify-content: center;
+}
+#discover {
   font-size: 1em;
 }
 /* / Vision and mission */
 
+/* Our work */
+.clients_logo {
+  margin-top: 3rem;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  place-items: center;
+  grid-template-areas: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine";
+  
+}
+.clients_logo > :nth-child(1) {
+  grid-area: one;
+}
+.clients_logo > :nth-child(2) {
+  grid-area: two;
+}
+.clients_logo > :nth-child(3) {
+  grid-area: three;
+}
+.clients_logo > :nth-child(4) {
+  grid-area: four;
+}
+.clients_logo > :nth-child(5) {
+  grid-area: five;
+}
+.clients_logo > :nth-child(6) {
+  grid-area: six;
+}
+.clients_logo > :nth-child(7) {
+  grid-area: seven;
+}
+.clients_logo > :nth-child(8) {
+  grid-area: eight;
+}
+.clients_logo > :nth-child(9) {
+  grid-area: nine;
+}
+.clients_logo > * {
+  margin-inline: auto;
+  width: 50%;
+}
+.bottom_middle{
+  position: relative;
+  top: 1.5rem;
+}
+/* / Our work */
 
 /* ---------------------------Responsiveness for desktop -------------------------------- */
 @media screen and (min-width: 768px) {
-  #vission_context{
+  .clients_logo{
+    grid-template-areas: 
+    "one two three"
+    "four five six"
+    "seven eight nine";
+    ;
+  }
+  #vission_context {
     max-width: 40%;
   }
   .services_details {
@@ -374,11 +434,10 @@ a {
   }
 }
 @media screen and (min-width: 1300px) {
- 
-  .right_middle{
+  .right_middle {
     top: -1rem;
   }
-  .left_middle{
+  .left_middle {
     bottom: 2.5rem;
   }
   .services_details {
@@ -395,8 +454,7 @@ a {
   }
 }
 @media screen and (min-width: 1920px) {
-
-  .right_middle{
+  .right_middle {
     top: -2rem;
   }
 
@@ -418,10 +476,8 @@ a {
 /* ------------------------- Responsiveness for mobile --------------------------------------- */
 
 @media screen and (max-width: 768px) {
-
-  #vission_mission{
+  #vission_mission {
     padding: 2rem;
-    
   }
   /* Nav bar Section */
   #nav .small_nav {
