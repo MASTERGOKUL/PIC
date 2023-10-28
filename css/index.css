@@ -14,7 +14,10 @@ a {
 /* Nav */
 #nav {
   z-index: 1;
-  background:linear-gradient( rgba(255, 255, 255, 0.2), rgba(134, 134, 134, 0.2) );
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(134, 134, 134, 0.2)
+  );
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   position: fixed;
@@ -242,109 +245,125 @@ a {
 .stroke_main {
   margin-top: 1rem;
   margin-bottom: -2rem;
-    font-family: Roboto;
-    font-size: clamp(50px,7vw,177px);
-    color: transparent;
-    -webkit-text-stroke: 1.5px #1F344733;
-    font-style: normal;
-    font-weight: 100;
-    line-height: normal;
-  }
-  .stroke_side{
-      position: relative;
-      font-size: clamp(16px,5vw,36px);
-      color: #1F3447;
-      font-weight: 700;
-  }
-  .left_middle{
-      bottom:11vh;
-  }
+  font-family: Roboto;
+  font-size: clamp(50px, 7vw, 177px);
+  color: transparent;
+  -webkit-text-stroke: 1.5px #1f344733;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+.stroke_side {
+  position: relative;
+  font-size: clamp(16px, 5vw, 36px);
+  color: #1f3447;
+  font-weight: 700;
+}
+.services_heading_container{
+  place-items: baseline;
+  display: grid;
+}
+.services_heading_container > *{
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+.left_middle{
+  bottom: 0.9rem;
+    position: relative;
+}
 /* ---- text strokes ------ */
 /* Services */
-.services_details{
+.services_details {
+  margin-bottom: 1rem;
   margin-inline: auto;
-  width: min(90%,70rem);
+  width: min(90%, 70rem);
   display: grid;
   gap: 2rem;
 }
-.services_details_container{
+.services_details_container {
   max-width: 378px;
   display: grid;
   gap: 1.5rem;
 }
 
-.services_details_container > .head{
-  font-size: clamp(1rem,4vw + 1rem,2.2rem);
-  color: #1F3447;
+.services_details_container > .head {
+  font-size: clamp(1rem, 4vw + 1rem, 2.2rem);
+  color: #1f3447;
   font-weight: 500;
   letter-spacing: 0.64px;
   line-height: normal;
   font-style: normal;
 }
-.services_details_container>img{
+.services_details_container > img {
   width: 3rem;
 }
-#help{
-    max-width: 378px;
-    color: #1F3447;
-    font-size: clamp(28px,5vw,48px);
-    letter-spacing: 0.96px;
-    font-weight: 700;
+#help {
+  max-width: 378px;
+  color: #1f3447;
+  font-size: clamp(28px, 5vw, 48px);
+  letter-spacing: 0.96px;
+  font-weight: 700;
 }
-#discover{
-  margin-top: clamp(0.5rem,5vw,2rem);
-  margin-bottom: clamp(0.5rem,5vw,2rem);
+#discover {
+  margin-top: clamp(0.5rem, 5vw, 2rem);
+  margin-bottom: clamp(0.5rem, 5vw, 2rem);
 }
-#services{
-  width: min(90%,110rem);
+#services {
+  width: min(90%, 110rem);
 }
-#services #discover{
-    border-radius: 52px;
-    background: #61AEBC;
-    box-shadow: 0px 4px 4px 0px rgba(97, 174, 188, 0.25);
+#services #discover {
+  border-radius: 52px;
+  background: #61aebc;
+  box-shadow: 0px 4px 4px 0px rgba(97, 174, 188, 0.25);
 }
 /* / Services */
 /* ---------------------------Responsiveness for desktop -------------------------------- */
-@media  screen and (min-width: 768px) {
-  .services_details{
+@media screen and (min-width: 768px) {
+  .services_details {
     position: relative;
-    margin-inline:  auto;
-    padding-top: 5rem;
+    margin-inline: auto;
+    padding-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
   }
-  .services_details_container>img{
+  .services_details_container > img {
     width: 4rem;
   }
 }
-@media  screen and (min-width: 1000px) {
-  .services_details{
-        /* bottom: 7rem; */
+@media screen and (min-width: 1300px) {
+  .left_middle{
+    bottom: 2.5rem;
+  }
+  .services_details {
+    /* bottom: 7rem; */
     position: relative;
     margin-inline: 10rem auto;
-    padding-top: 5rem;
+    padding-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
   }
-  .services_details_container>img{
+  .services_details_container > img {
     width: 4rem;
   }
 }
-@media  screen and (min-width: 1300px){
-  .services_details{
-    position: relative;
-    bottom: 14rem;
-margin-inline: 38rem auto;
-padding-top: 5rem;
-display: grid;
-grid-template-columns: repeat(2,1fr);
-gap: 5rem;
-}
-.services_details_container>img{
-width: 4rem;
-}
+@media screen and (min-width: 1920px) {
+
+  .services_details {
+    /* position: relative;
+    bottom: 14rem; */
+    margin-inline: 38rem auto;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    margin-top: -14rem;
+    margin-bottom: 2rem;
+  }
+  .services_details_container > img {
+    width: 4rem;
+  }
 }
 /* ------------------------- Responsiveness for mobile --------------------------------------- */
 
@@ -386,7 +405,4 @@ width: 4rem;
   }
   /* ------ Hero Section ------  */
   /* ------- text stroke -------- */
-  .left_middle{
-    bottom:4vh;
-  }
 }
