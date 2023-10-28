@@ -314,7 +314,7 @@ a {
   letter-spacing: 0.96px;
   font-weight: 700;
 }
-#discover {
+#discover , #callus{
   margin-top: clamp(0.5rem, 5vw, 2rem);
   margin-bottom: clamp(0.5rem, 5vw, 2rem);
 }
@@ -364,6 +364,8 @@ a {
 
 /* Our work */
 .clients_logo {
+  width: min(90%,110rem);
+  margin-inline :auto;
   margin-top: 3rem;
   display: grid;
   grid-auto-columns: 1fr;
@@ -405,9 +407,14 @@ a {
 }
 .bottom_middle{
   position: relative;
-  top: 1.5rem;
+  top: 2.3rem;
 }
 /* / Our work */
+/* Idea */
+#callus{
+  padding: 1rem;
+}
+/* / Idea */
 
 /* ---------------------------Responsiveness for desktop -------------------------------- */
 @media screen and (min-width: 768px) {
@@ -434,6 +441,9 @@ a {
   }
 }
 @media screen and (min-width: 1300px) {
+  .bottom_middle{
+    top: 3rem;
+  }
   .right_middle {
     top: -1rem;
   }
@@ -454,6 +464,9 @@ a {
   }
 }
 @media screen and (min-width: 1920px) {
+  .bottom_middle{
+    top: 4.5rem;
+  }
   .right_middle {
     top: -2rem;
   }
