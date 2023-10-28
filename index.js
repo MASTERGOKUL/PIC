@@ -1,9 +1,9 @@
 
 // for the responsive navbar
-const buttons = document.querySelectorAll("button");
+const button = document.getElementById("ham_btn");
 const mobileContainer = document.getElementById("small_nav_mobile_container");
 
-buttons.forEach((button) => {
+
   button.addEventListener("click", () => {
     const currentState = button.getAttribute("data-state");
 
@@ -23,7 +23,7 @@ buttons.forEach((button) => {
       
     }
   });
-});
+
 
 
 // -----------------------------

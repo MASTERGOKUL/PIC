@@ -14,7 +14,7 @@ a {
 /* Nav */
 #nav {
   z-index: 1;
-  background: rgba(255, 255, 255, 0);
+  background:linear-gradient( rgba(255, 255, 255, 0.2), rgba(134, 134, 134, 0.2) );
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   position: fixed;
@@ -209,7 +209,7 @@ a {
   flex-shrink: 0;
   border-radius: 52px;
   background-color: #61aebc;
-  font-size: clamp(21px, 4vw, 24px);
+  font-size: clamp(15px, 4vw, 24px);
   font-weight: 500;
   letter-spacing: 3px;
 }
@@ -240,8 +240,10 @@ a {
 
 /* ---- text strokes ------ */
 .stroke_main {
+  margin-top: 1rem;
+  margin-bottom: -2rem;
     font-family: Roboto;
-    font-size: clamp(50px,15vw,177px);
+    font-size: clamp(50px,7vw,177px);
     color: transparent;
     -webkit-text-stroke: 1.5px #1F344733;
     font-style: normal;
@@ -255,12 +257,32 @@ a {
       font-weight: 700;
   }
   .left_middle{
-      bottom:10vh;
+      bottom:11vh;
   }
 /* ---- text strokes ------ */
 /* Services */
-#services_text{
+.services_details{
+  margin-inline: auto;
+  width: min(90%,70rem);
+  display: grid;
+  gap: 2rem;
+}
+.services_details_container{
+  max-width: 378px;
+  display: grid;
+  gap: 1.5rem;
+}
 
+.services_details_container > .head{
+  font-size: clamp(1rem,4vw + 1rem,2.2rem);
+  color: #1F3447;
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  line-height: normal;
+  font-style: normal;
+}
+.services_details_container>img{
+  width: 3rem;
 }
 #help{
     max-width: 378px;
@@ -269,13 +291,61 @@ a {
     letter-spacing: 0.96px;
     font-weight: 700;
 }
+#discover{
+  margin-top: clamp(0.5rem,5vw,2rem);
+  margin-bottom: clamp(0.5rem,5vw,2rem);
+}
+#services{
+  width: min(90%,110rem);
+}
 #services #discover{
     border-radius: 52px;
     background: #61AEBC;
     box-shadow: 0px 4px 4px 0px rgba(97, 174, 188, 0.25);
 }
 /* / Services */
-
+/* ---------------------------Responsiveness for desktop -------------------------------- */
+@media  screen and (min-width: 768px) {
+  .services_details{
+    position: relative;
+    margin-inline:  auto;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+  }
+  .services_details_container>img{
+    width: 4rem;
+  }
+}
+@media  screen and (min-width: 1000px) {
+  .services_details{
+        /* bottom: 7rem; */
+    position: relative;
+    margin-inline: 10rem auto;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+  }
+  .services_details_container>img{
+    width: 4rem;
+  }
+}
+@media  screen and (min-width: 1300px){
+  .services_details{
+    position: relative;
+    bottom: 14rem;
+margin-inline: 38rem auto;
+padding-top: 5rem;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 5rem;
+}
+.services_details_container>img{
+width: 4rem;
+}
+}
 /* ------------------------- Responsiveness for mobile --------------------------------------- */
 
 @media screen and (max-width: 768px) {
@@ -317,6 +387,6 @@ a {
   /* ------ Hero Section ------  */
   /* ------- text stroke -------- */
   .left_middle{
-    bottom:5vh;
+    bottom:4vh;
   }
 }
