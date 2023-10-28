@@ -1,5 +1,6 @@
 /* figma link : https://www.figma.com/file/VkW9XNyzutas6XWS9IuMpY/Untitled?node-id=75%3A200&mode=dev */
 * {
+  /* background-color: rgba(114, 82, 82, 0.2); */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -260,8 +261,13 @@ a {
   font-weight: 700;
 }
 .services_heading_container{
-  place-items: baseline;
   display: grid;
+}
+.baseline{
+  place-items:baseline;
+}
+.end{
+  place-items: end;
 }
 .services_heading_container > *{
   grid-column: 1 / -1;
@@ -273,6 +279,7 @@ a {
 }
 /* ---- text strokes ------ */
 /* Services */
+
 .services_details {
   margin-bottom: 1rem;
   margin-inline: auto;
@@ -317,8 +324,43 @@ a {
   box-shadow: 0px 4px 4px 0px rgba(97, 174, 188, 0.25);
 }
 /* / Services */
+/* Vision and mission */
+#vission_mission{
+  margin-top: 2rem;
+  padding: 5rem;
+  background-image: url('../asserts/vision_mission.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#vission_context{
+  text-shadow: 1px 1px 1px black;
+  color: #F5F5F5;
+  font-weight: 400;
+  text-align: end;
+  margin-top: 5rem;
+ max-width: 90%;
+}
+.right_middle{
+  position: relative;
+  top: 1rem;
+}
+.vision_container{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  /* margin-inline: 50% auto; */
+}
+#discover{
+  font-size: 1em;
+}
+/* / Vision and mission */
+
+
 /* ---------------------------Responsiveness for desktop -------------------------------- */
 @media screen and (min-width: 768px) {
+  #vission_context{
+    max-width: 40%;
+  }
   .services_details {
     position: relative;
     margin-inline: auto;
@@ -332,6 +374,10 @@ a {
   }
 }
 @media screen and (min-width: 1300px) {
+ 
+  .right_middle{
+    top: -1rem;
+  }
   .left_middle{
     bottom: 2.5rem;
   }
@@ -349,6 +395,10 @@ a {
   }
 }
 @media screen and (min-width: 1920px) {
+
+  .right_middle{
+    top: -2rem;
+  }
 
   .services_details {
     /* position: relative;
@@ -368,6 +418,11 @@ a {
 /* ------------------------- Responsiveness for mobile --------------------------------------- */
 
 @media screen and (max-width: 768px) {
+
+  #vission_mission{
+    padding: 2rem;
+    
+  }
   /* Nav bar Section */
   #nav .small_nav {
     visibility: hidden;
