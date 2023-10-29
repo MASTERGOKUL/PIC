@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
@@ -226,18 +228,19 @@
         <img src="./asserts/iit madras.png" alt="iit madras" />
       </div>
       <div class="vision_discover">
-        <button class="button" href="#" id="discover">DISCOVER MORE</button>
+        <button class="button" href="#" id="discover" style="margin: 5rem;">SEE MORE</button>
       </div>
     </div>
     <!-- /  our works -->
     <!-- idea -->
     <div class="container-fluid" id="idea">
-      <div class="text_container vision_container">
-        <div class="services_heading_container right_middle" id="idea_wrapper">
+      <img src="./asserts/idea2.jpg" alt="idea" />
+      <div class="text_container vision_container idea_container">
+        <div class="services_heading_container end" id="idea_wrapper">
           <div class="stroke_main" id="idea_text">HAVE AN IDEA?</div>
-          <div class="stroke_side">LET'S GET TO WORK</div>
+          <div class="stroke_side left_bottom">LET'S GET TO WORK</div>
         </div>
-        <div id="vission_context">
+        <div id="idea_context">
           "Got an intriguing idea in mind? We're all ears and ready to dive into
           the world of exploration. Our research lab is fueled by curiosity and
           a passion for pushing boundaries. We're here to nurture creativity and
@@ -249,11 +252,36 @@
       </div>
     </div>
     <!-- / idea -->
+
+    <!-- footer  -->
+    <div class="footer">
+      <div class="footer_nav">
+        <div class="links">
+          <a id="footer_home" class="underline" href="#">HOME</a>
+          <a id="footer_works"  href="#">WORKS</a>
+          <a id="footer_pic" href="#">PIC</a>
+          <a id="footer_about" href="#">ABOUT</a>
+          <a id="footer_contact"  href="#">CONTACT</a>
+        </div>
+        <hr />
+      </div>
+      <div class="address">
+        Alathukombai - Post, <br>Sathyamangalam - 638 401, <br>Erode District,  <br>Tamil Nadu,
+        India.
+      </div>
+      <div class="contact">
+        <span id="footer_mobile"> +91-9500676270 </span>
+        <span id="mail"> piclabs88@gmail.com </span>
+      </div>
+      <hr />
+      <div class="copyright">© 2023PIC.</div>
+    </div>
+    <!-- / footer  -->
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"
   ></script>
-  <script src="./index.js"></script>
+  <script src="./nav.js"></script>
 </html>

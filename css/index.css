@@ -12,137 +12,6 @@ a {
   text-decoration: none !important;
 }
 
-/* Nav */
-#nav {
-  z-index: 1;
-  background: linear-gradient(
-    rgba(255, 255, 255, 0.2),
-    rgba(134, 134, 134, 0.2)
-  );
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-.pic {
-  color: #61aebc;
-  font-size: 48px;
-  font-weight: 700;
-  letter-spacing: 2.88px;
-}
-
-.small_nav {
-  font-style: normal;
-  position: relative;
-  margin-top: 5%;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 2.5px;
-}
-
-.small_nav_mobile {
-  font-style: normal;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 2.5px;
-}
-
-#small_nav_mobile_container {
-  display: none;
-}
-.animation_out {
-  transform: translateX(-500px);
-  transition: 1s ease-out;
-}
-@keyframes text-slide-in {
-  0% {
-    transform: translateX(-100px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes text-slide-out {
-  0% {
-    transform: translateX(-500px);
-  }
-
-  100% {
-    transform: translateX(500px);
-  }
-}
-
-/* button for mobile */
-#ham_btn {
-  display: none;
-  z-index: 3;
-  position: absolute;
-  top: 20%;
-  right: 5%;
-  background: transparent;
-}
-
-/* button one */
-
-.button-one {
-  --button-color: #858484;
-}
-
-.button-one .line {
-  transition: y 150ms ease-in 150ms, rotate 150ms ease-in, opacity 0ms 150ms;
-  transform-origin: center;
-}
-
-.button-one[aria-expanded="true"] .line {
-  transition: y 150ms ease-in, rotate 150ms ease-in 150ms, opacity 0ms 150ms;
-}
-
-.button-one[aria-expanded="true"] :is(.top, .bottom) {
-  y: 45;
-}
-
-.button-one[aria-expanded="true"] .top {
-  rotate: 45deg;
-}
-
-.button-one[aria-expanded="true"] .middle {
-  opacity: 0;
-}
-
-.button-one[aria-expanded="true"] .bottom {
-  rotate: -45deg;
-}
-
-@keyframes to-close-icon {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  40% {
-    stroke-dashoffset: 79.9;
-  }
-  60% {
-    stroke-dashoffset: 79.9;
-    rotate: calc(var(--rotation));
-  }
-  100% {
-    stroke-dashoffset: 0;
-    rotate: var(--rotation);
-  }
-}
-
-/* --Nav-- */
-
 /* Hero Section */
 #container_hero {
   position: relative;
@@ -314,11 +183,14 @@ a {
   letter-spacing: 0.96px;
   font-weight: 700;
 }
-#discover , #callus{
+#discover,
+#callus {
   margin-top: clamp(0.5rem, 5vw, 2rem);
   margin-bottom: clamp(0.5rem, 5vw, 2rem);
 }
 #services {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   width: min(90%, 110rem);
 }
 #services #discover {
@@ -363,16 +235,18 @@ a {
 /* / Vision and mission */
 
 /* Our work */
+#our_works {
+  margin-top: 3rem;
+}
 .clients_logo {
-  width: min(90%,110rem);
-  margin-inline :auto;
+  width: min(90%, 110rem);
+  margin-inline: auto;
   margin-top: 3rem;
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   place-items: center;
   grid-template-areas: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine";
-  
 }
 .clients_logo > :nth-child(1) {
   grid-area: one;
@@ -405,25 +279,58 @@ a {
   margin-inline: auto;
   width: 50%;
 }
-.bottom_middle{
+.bottom_middle {
   position: relative;
   top: 2.3rem;
 }
 /* / Our work */
 /* Idea */
-#callus{
+#idea {
+  height: 56rem;
+  overflow: hidden;
+  background: #edeff3;
+  padding: 0;
+  /* display: grid; */
+}
+#callus {
   padding: 1rem;
 }
+#idea_context {
+  color: #1f3447;
+  text-align: right;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 138.687%; /* 36.059px */
+  letter-spacing: 0.78px;
+  font-size: clamp(15px, 3vw, 26px);
+  text-align: end;
+  margin-top: 5rem;
+  max-width: 40%;
+}
+.idea_container {
+  padding: 5rem;
+}
+#idea > img {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 32%);
+  margin-top: -10rem;
+  transform: rotate(-46.38deg);
+  flex-shrink: 0;
+  margin-bottom: -20rem;
+  width: 50%;
+}
+
 /* / Idea */
+
+
 
 /* ---------------------------Responsiveness for desktop -------------------------------- */
 @media screen and (min-width: 768px) {
-  .clients_logo{
-    grid-template-areas: 
-    "one two three"
-    "four five six"
-    "seven eight nine";
-    ;
+  .clients_logo {
+    grid-template-areas:
+      "one two three"
+      "four five six"
+      "seven eight nine";
   }
   #vission_context {
     max-width: 40%;
@@ -441,7 +348,7 @@ a {
   }
 }
 @media screen and (min-width: 1300px) {
-  .bottom_middle{
+  .bottom_middle {
     top: 3rem;
   }
   .right_middle {
@@ -464,7 +371,7 @@ a {
   }
 }
 @media screen and (min-width: 1920px) {
-  .bottom_middle{
+  .bottom_middle {
     top: 4.5rem;
   }
   .right_middle {
@@ -489,33 +396,10 @@ a {
 /* ------------------------- Responsiveness for mobile --------------------------------------- */
 
 @media screen and (max-width: 768px) {
+
   #vission_mission {
     padding: 2rem;
   }
-  /* Nav bar Section */
-  #nav .small_nav {
-    visibility: hidden;
-  }
-  #nav .small_active {
-    animation: text-slide-in 0.5s alternate;
-    width: 70%;
-    background-color: #1f3447;
-    list-style-type: none;
-    height: 100vh;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    top: 0;
-  }
-  #nav .small_nav_mobile {
-    padding-top: 10%;
-  }
-  #ham_btn {
-    display: block;
-  }
-  /* ----- Nav bar Section ----- */
 
   /* Hero Section  */
   #hero {
@@ -528,5 +412,4 @@ a {
     padding-top: 8%;
   }
   /* ------ Hero Section ------  */
-  /* ------- text stroke -------- */
 }
