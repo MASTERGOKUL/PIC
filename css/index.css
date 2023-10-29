@@ -33,7 +33,7 @@ a {
   flex-direction: column;
   align-items: center;
   color: #fff;
-  
+
   flex-shrink: 0;
   background-image: url("../asserts/hero_bg_cropped.png");
   background-size: cover;
@@ -59,7 +59,7 @@ a {
   width: 70%;
   font-style: normal;
   /* text-align: center; */
-  
+
   font-size: clamp(15px, 3vw, 26px);
   font-weight: 300;
   line-height: 143.687%;
@@ -115,7 +115,7 @@ a {
 .stroke_main {
   margin-top: 1rem;
   margin-bottom: -2rem;
-  
+
   font-size: clamp(50px, 7vw, 177px);
   color: transparent;
   -webkit-text-stroke: 1.5px #1f344733;
@@ -294,7 +294,7 @@ a {
   padding: 0;
   /* display: grid; */
 }
-#idea_wrapper{
+#idea_wrapper {
   width: 140%;
 }
 #callus {
@@ -303,7 +303,7 @@ a {
 #idea_context {
   color: #1f3447;
   text-align: right;
-  
+
   font-style: normal;
   font-weight: 400;
   line-height: 138.687%; /* 36.059px */
@@ -327,10 +327,24 @@ a {
 
 /* / Idea */
 /* common for pages */
-.lets_head{
-  padding-top:10rem ;
+.lets_head {
+  padding-top: 10rem;
   padding-bottom: 2rem;
   background-color: #1f3447;
+}
+.new_heading_text {
+  font-size: clmap(4rem, 5vw, 9rem);
+  font-weight: 500;
+  -webkit-text-stroke: 1.5px #ffffff33;
+}
+.new_des_text {
+  color: white;
+}
+.in_hr {
+  margin-top: 1rem;
+}
+.out_hr {
+  margin-bottom: 1rem;
 }
 
 /* ---------------------------Responsiveness for desktop -------------------------------- */
@@ -405,7 +419,6 @@ a {
 /* ------------------------- Responsiveness for mobile --------------------------------------- */
 
 @media screen and (max-width: 768px) {
-
   #vission_mission {
     padding: 2rem;
   }

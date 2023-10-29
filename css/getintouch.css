@@ -1,11 +1,4 @@
-#lets_work {
-  font-size: clmap(4rem, 5vw, 9rem);
-  font-weight: 500;
-  -webkit-text-stroke: 1.5px #ffffff33;
-}
-#ready {
-  color: white;
-}
+
 form {
   margin-top: 4rem;
   width: 60%;
@@ -55,12 +48,7 @@ input:focus{
     margin: 4rem;
     margin-right: 0;
 }
-#in_hr{
-margin-top: 1rem;
-}
-#out_hr{
-    margin-bottom: 1rem;
-}
+
 /* ---------------------- responsive for desktop------------------------ */
 @media screen and (min-width: 1000px) {
     .inputs>:nth-child(2){

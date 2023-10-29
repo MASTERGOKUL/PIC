@@ -1,0 +1,75 @@
+.new_services_container {
+    margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.new_services_container > img {
+  width: 3rem;
+}
+.new_services_title {
+  color: #1f3447;
+  font-size: clamp(20px, 5vw, 32px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.64px;
+}
+.new_services_context {
+  color: rgba(31, 52, 71, 0.8);
+  font-size: clamp(5px, 4vw, 18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 184.2%; /* 29.472px */
+  letter-spacing: 0.32px;
+}
+.new_services_list_heading {
+    margin-top: 1rem;
+  color: rgba(97, 174, 188, 0.8);
+  font-size: clamp(10px,5vw,15px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.15px;
+}
+ul{
+    margin-left: 2rem;
+    list-style-type: none;
+}
+ul li{
+    color: #4C5D6C;
+    margin: 1rem;
+}
+ul li::before {
+    content: "\2713";
+    color:  rgba(97, 174, 188, 0.80); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 2em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+.bg_dummy:nth-child(even){
+    background-color: #EDEFF3;
+}
+.bg_dummy{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+}
+@media screen and (min-width:1080px) {
+    .new_services_container{
+        width: clamp(50%,10vw,50%);
+        margin-inline: auto;
+    }
+    .new_services_context{
+        width: 70%;
+    }
+    .new_services_right_align{
+        margin-top: -9%;
+        position: relative;
+        left: 50%;
+    }
+    .new_services_title {
+        width: 10%;
+    }
+}
