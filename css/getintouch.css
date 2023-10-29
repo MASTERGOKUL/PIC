@@ -1,0 +1,72 @@
+#lets_work {
+  font-size: clmap(4rem, 5vw, 9rem);
+  font-weight: 500;
+  -webkit-text-stroke: 1.5px #ffffff33;
+}
+#ready {
+  color: white;
+}
+form {
+  margin-top: 4rem;
+  width: 60%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+}
+.form_title {
+  color: #1f3447;
+  font-size: clamp(25px, 5vw, 56px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.12px;
+}
+.form_des {
+  color: rgba(31, 52, 71, 0.7);
+  font-size: clamp(15px, 5vw, 34.611px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.692px;
+}
+button[type="submit"] {
+  align-self: flex-end;
+}
+.inputs {
+  display: grid;
+  /* width: 70%; */
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem;
+  grid-row-gap: 3rem;
+  margin-top: 2rem;
+}
+input {
+    border-bottom: 1px solid #6D7B87;
+  height: 3rem;
+}
+input:focus{
+    outline:none;
+}
+.inputs > *{
+    grid-column: span 2;
+}
+#send{
+    margin: 4rem;
+    margin-right: 0;
+}
+#in_hr{
+margin-top: 1rem;
+}
+#out_hr{
+    margin-bottom: 1rem;
+}
+/* ---------------------- responsive for desktop------------------------ */
+@media screen and (min-width: 1000px) {
+    .inputs>:nth-child(2){
+        grid-column: 1/2;
+    }
+    .inputs>:nth-child(3){
+        grid-column: 2/3;
+    }
+}
