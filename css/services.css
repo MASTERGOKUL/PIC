@@ -1,3 +1,4 @@
+
 .new_services_container {
     margin: 5rem;
   display: flex;
@@ -32,15 +33,15 @@
   line-height: normal;
   letter-spacing: -0.15px;
 }
-ul{
+.list{
     margin-left: 2rem;
     list-style-type: none;
 }
-ul li{
+.list> li{
     color: #4C5D6C;
     margin: 1rem;
 }
-ul li::before {
+.list> li::before {
     content: "\2713";
     color:  rgba(97, 174, 188, 0.80); /* Change the color */
     font-weight: bold; /* If you want it to be bold */
